@@ -15,6 +15,6 @@ public class ConteoMagico {
         return suma;
     }
     public static void main(String[] args) {
-        System.out.println("Conteo hasta 4: " + contar(5));
+        System.out.println("Conteo hasta 4: " + contar(4));
     }
 }
