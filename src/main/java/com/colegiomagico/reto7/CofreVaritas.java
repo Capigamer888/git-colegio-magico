@@ -6,7 +6,7 @@ package com.colegiomagico.reto7;
 public class CofreVaritas {
 
     public static int varitaMasPoderosa(int[] tamanos) {
-        return 0; // TODO: Cambia esto
+        return java.util.Arrays.stream(tamanos).max().orElseThrow(() -> new IllegalArgumentException("El arreglo no puede estar vacío"));
     }
 
     public static void main(String[] args) {
