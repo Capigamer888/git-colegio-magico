@@ -8,7 +8,9 @@ import java.util.ArrayList;
 public class InventarioPociones {
 
     public static java.util.List<String> filtrar(java.util.List<String> ingredientes) {
-        return ingredientes.stream().filter(i -> i.startsWith("A")).collect(java.util.stream.Collectors.toList());
+        ArrayList<String> resultado = new ArrayList<>(ingredientes);
+        resultado.removeIf(i -> !i.startsWith("A"));
+        return resultado;
     }
 
     public static void main(String[] args) {
