@@ -1,12 +1,14 @@
 package com.colegiomagico.reto8;
 
+import java.util.ArrayList;
+
 /**
  * Filtra la lista de ingredientes devolviendo solo aquellos que empiezan con 'A'.
  */
 public class InventarioPociones {
 
     public static java.util.List<String> filtrar(java.util.List<String> ingredientes) {
-        return new java.util.ArrayList<>(); // TODO: Cambia esto
+        return ingredientes.stream().filter(i -> i.startsWith("A")).collect(java.util.stream.Collectors.toList());
     }
 
     public static void main(String[] args) {
